@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+  <link rel="stylesheet" href="calculator.css">
+   </head>
+   <body>
+      <script src="calculator.js"></script>
+      <form name="calculator">
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input type="text" name="display" id="display" class="field">
+               </td>
+            </tr>
+            <tr>
+               <td><button onclick="clear()" value="c" >c</button></td>
+            </tr>
+            <tr>
+               <td><button type="button" onclick="number('1')" value="1">1</button></td>
+               <td><button type="button" onclick="number('2')" value="2">2</button></td>
+               <td><button type="button" onclick="number('3')" value="3">3</button></td>
+               <td><button type="button" onclick="operator('+')" class="operator" value="+" >+</button></td>
+             </tr>
+             <tr>
+               <td><button type="button" onclick="number('4')" value="4">4</button></td>
+               <td><button type="button" onclick="number('5')" value="5">5</button></td>
+               <td><button type="button" onclick="number('6')" value="6">6</button></td>
+               <td><button type="button" onclick="operator('-')" class="operator" value="-" >-</button></td>
+            </tr>
+            <tr>
+               <td><button type="button" onclick="number('7')" value="7">7</button></td>
+               <td><button type="button" onclick="number('8')" value="8">8</button></td>
+               <td><button type="button" onclick="number('9')" value="9">9</button></td>
+               <td><button type="button" onclick="operator('*')" class="operator" value="*" >*</button></td>
+            </tr>
+            <tr>
+               <td><button type="button" onclick="number(',')" value=",">,</button></td>
+               <td><button type="button" onclick="number('0')" value="0">0</button></td>
+               <td><button type="button" onclick="equals('=')" value="=">=</button></td>
+               <td><button type="button" onclick="operator('/')" class="operator" value="/" >/</button></td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>
